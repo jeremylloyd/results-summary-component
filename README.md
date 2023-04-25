@@ -19,8 +19,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Vercel](https://results-summary-component-three-alpha.vercel.app/)
+- Solution URL: [Github](https://github.com/jeremylloyd/results-summary-component)
 
 ## My process
 
@@ -35,4 +35,8 @@ Users should be able to:
 ### What I learned
 
 - Svelte
+  - It's not possible to create and assign a class name directly from a JS variable name. You can get around this by:
+    - Assigning each possible class individually with `class:text-[colour]-500={colour === '[colour]'}`. This is verbose, and needs to be expanded for each new class option but it loads quickly and is easy to set up.
+    - Assign a class using JS in the `<script>` tag, once the compoment has rendered by using `onMount()`. Tailwind won't be able to see that the class name is required, so you'll need to add it to the safeList in `tailwind.config.js` to ensure the class isn't purged during compilation. This list will need to be updated for each new class option, but it's a lot less verbose than the first option.
 - TailwindCSS
+  - It's not too hard once it's installed and you're up and going (assuming you're familiar with CSS) - the [Tailwind docs](https://tailwindcss.com/docs) are comprehensive, accessible and searchable.
