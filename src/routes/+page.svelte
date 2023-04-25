@@ -30,7 +30,9 @@
 </script>
 
 <div class="min-h-screen md:flex md:justify-center md:items-center">
-  <main class="grid gap-4 md:grid-cols-2 max-w-3xl">
+  <main
+    class="grid gap-4 md:grid-cols-2 max-w-3xl md:shadow-2xl shadow-blue-700/20 rounded-[32px]"
+  >
     <section
       class="md:min-h-[500px] flex flex-col gap-4 md:gap-6 rounded-b-[32px] md:rounded-[32px] p-4 pb-8 md:p-10 md:px-16 text-center bg-gradient-to-b from-[#7857FF] to-indigo-600 text-indigo-50"
     >
@@ -43,12 +45,12 @@
       </div>
       <p class="text-2xl md:text-3xl text-white">Great</p>
       <p class="text-gray-200 md:text-lg">
-        You scored higher than 65% of the people who have taken these tests
+        You scored higher than 65% of the people who have taken these tests.
       </p>
     </section>
-    <section class="summary flex flex-col justify-center px-8 gap-6">
+    <section class="summary flex flex-col justify-center px-8 gap-8">
       <h2 class="text-lg md:text-2xl font-bold">Summary</h2>
-      <div class="categories flex flex-col gap-4">
+      <div class="categories flex flex-col gap-[14px]">
         {#each categories as category}
           <Category {...category} />
         {/each}
