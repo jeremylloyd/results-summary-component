@@ -52,7 +52,8 @@
         <Category {...category} />
       {/each}
     </div>
-    <button class="p-4 rounded-full bg-slate-700 text-slate-50 text-lg"
+    <button
+      class="p-4 rounded-full bg-slate-700 text-slate-50 text-lg hover:bg-gradient-to-b hover:from-[#7857FF] hover:to-indigo-600"
       >Continue</button
     >
   </section>
