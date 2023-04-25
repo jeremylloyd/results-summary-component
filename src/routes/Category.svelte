@@ -8,7 +8,7 @@ let category: HTMLDivElement;
 </script>
 
 <div
-  class="category flex justify-between p-4 rounded-xl"
+  class="category flex justify-between p-4 rounded-xl md:text-lg"
   class:text-yellow-500={colour === 'yellow'}
   class:bg-yellow-50={colour === 'yellow'}
   class:text-indigo-500={colour === 'indigo'}
@@ -27,6 +27,3 @@ let category: HTMLDivElement;
     <strong class="text-slate-700">{rating}</strong>&nbsp;/ 100
   </p>
 </div>
-
-<!-- Create a div with a dynamic className of text-{colour}-500 (depending on the colour variable passed in) -->
-<!-- Create a div with a dynamic className of bg-{colour}-50 (depending on the colour variable passed in) -->
